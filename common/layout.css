@@ -1,0 +1,428 @@
+#speWrap {
+    background-image: url('http://img.gmidas.com/spe_julgigo/2022chu_rep.jpg'); 
+    min-height:100%;
+    height:fit-content
+}
+#header {background:#}
+#header h1 {padding:30px 80px }
+#header h1 a {
+    color: #2A4756
+}
+
+.popup {
+    position:absolute;
+    top:30%;
+    left:10%;
+    cursor:pointer;   
+}
+
+#lnb {position:absolute; right:80px; top:30px;}
+#lnb a {font-weight:500; padding:5px 10px;display:inline-block; }
+#lnb a:first-child::after {content:""; display:inline-block; width:1px; height:13px; background:#666; margin-left:20px;}
+
+#btn_mobMenu {display:none;}
+#btn_mobMenu {margin-left:3%}
+#btn_mobMenu span {display: block; width:30px; height:4px; background:#666; margin-bottom:5px;border-radius:3px;}
+#btn_mobMenu span:last-child {margin-bottom:0px;}
+
+.speTitle {text-align:center;}
+.speTitle img {max-width:1600px;}
+
+#category {clear:both; max-width:1280px;margin:0 auto;}
+#category .subCate {}
+#category .subCate li {
+  float:left; width:14.14% ;
+  text-align:center;
+  border:1px solid #DAB96A;
+  border-right:0px;
+  background-color: #446374;
+}
+#category .subCate a {
+    position: relative;
+    color: #fff;
+    transition:all .17s
+}
+#category .subCate li a:hover {
+    background: #768775
+}
+#category.mob_on {left:0%;    -webkit-transition:0.14s;
+    -moz-transition:0.14s;
+    -ms-transition:0.14s;
+    -o-transition:0.14s;
+    transition:0.14s;}
+
+#btn_webMenu:hover {color:#aaa}
+
+#category .subCate #ico_health {background:url('../img/cat1.png') no-repeat; 
+    background-size:contain; background-position:center;}
+    #category .subCate #ico_food {background:url('../img/cat2.png') no-repeat; 
+    background-size:contain; background-position:center;}
+    #category .subCate #ico_life {background:url('../img/cat3.png') no-repeat; 
+    background-size:contain; background-position:center;}
+    #category .subCate #ico_fresh {background:url('../img/cat4.png') no-repeat; 
+    background-size:contain; background-position:center;}
+
+#category .subCate i {font-size:0px; position:absolute; top:15px; left:0px; display:block; width:100%; height:45%;}
+
+#category .subCate li:last-child {
+  border-right: 1px solid #dadada
+}
+#category .subCate li a {
+  width:100%; 
+  font-size:16px;
+  display:inline-block; 
+  padding:15px 0px 15px;
+  font-weight:600
+}
+
+#category .subCate li.sub_on {}
+#category .subCate::after {display:block;content:""; clear:both;}
+#category .subsubC {overflow:hidden;}
+#category .subsubC li {  float:left;line-height:40px;width:19.82%;text-align:center; 
+    border-right:1px solid #dadada;border-bottom:1px solid #dadada;}
+#category .subsubC li:first-child {border-left:1px solid #dadada }
+ #category .subsubC li:nth-child(5n+1) {border-left:1px solid #dadada }
+#category .subsubC li a {font-size:14px;width:100%; height:100%; display:inline-block;background:#f9f9f9 }
+#header h2 {line-height:55px; padding:0 15px; border-top:1px solid #fff}
+h3 {text-align: center; font-size:23px; margin:3% 0}
+
+#contents {max-width:1280px;margin:0 auto;  padding:30px 0 75px;}
+
+#contents #itemList {
+    border-top:3px solid #fff;
+    border-bottom:2px solid #fff; 
+    padding:30px 0; 
+    box-sizing:border-box
+    }
+#contents #itemList ul li {width:23%; float:left; box-sizing:border-box; border:1px solid #fff ; padding:3%}
+#contents #itemList ul li a {padding:7% 4%; display:block;}
+#contents #itemList ul::after {display:block; content:""; clear:both;}
+#contents #itemList ul li {
+    margin-right:2%; margin-bottom:3%; transition:all 0.4s;padding:1%;
+    background-color:#fff;
+ }
+#contents #itemList ul li:hover {border:1px solid #dedede}
+#contents #itemList ul li:nth-child(4n) {margin-right:0px}
+#contents #itemList ul li .itemThumb { height:250px;}
+#contents #itemList ul li .itemThumb img  {height:100%;width:100%; object-fit:cover; height:250px}
+#contents #itemList ul li .itemName {padding:10px 0 ; font-weight:500;overflow:hidden; text-overflow: ellipsis; white-space:nowrap}
+#contents #itemList ul li .itemInfo {font-weight:700; font-size:22px;text-align:right;}
+#contents #itemList ul li .btnBuy {
+    border-radius:8px; 
+    padding:10px; 
+    margin:10px auto; 
+    font-size:14px; 
+    font-weight:500; 
+    width:90%;
+    display:inline-block;
+    text-align: center;
+    background-color:#ae4d35;
+    color:#fff
+}
+#contents .img_description {
+    text-align: center;
+    font-size:16px;
+    border:1px solid #dadada;
+    max-width:900px;
+    margin:10px auto;
+    padding:30px 15px;
+    background-color:#ffffff85;
+}
+#contents .img_description img {width:100%}
+
+.payDetail {
+    width:900px; border:1px solid #dadada; margin:0 auto; padding:15px;
+    background-color:#ffffff85
+}
+.payDetail .pay_thumb {
+  text-align:Center;
+  /* max-height:550px; */
+  border-bottom:1px solid #dadada;
+  
+  margin:0 auto 4% 
+}
+.payDetail .pay_thumb img {
+  max-width:650px; 
+  height:100%; 
+  object-fit: contain;}
+/*.deliver_dl,.price_dl {padding:4vh;}*/
+.deliver_dl {} 
+.deliver_dl dt, .deliver_dl dd {height:40px;line-height:40px; margin-bottom:10px;}
+.deliver_dl dt {display:inline-block; width:25%; text-align:center; font-weight:600}
+.deliver_dl dd {display:inline-block; width:74%;height:auto;}
+.deliver_dl input {height:35px;width:100%;}
+.deliver_dl  .textShort {width:30%}
+#btn__postcard {
+    display:inline-block;
+    height:35px;
+    padding:0 15px;
+    font-size:13px;
+    border-radius: 6px;
+    margin-left:5px;
+    background-color:#ae9c86;
+    color:white;
+}
+.price_dl {
+  border-top:1px solid #dadada; 
+  font-size:19px;
+  border-bottom:1px solid #dadada;
+  padding:20px 0;
+  
+}
+.price_dl dt {width: 35%; display:inline-block; text-align:center; font-weight:600; line-height:40px; 
+   /* border-right:1px solid #eee*/}
+.price_dl dd {display:inline-block; width:64%;text-align: center; line-height:40px; background:#f9f9f9}
+
+.price_dl #amount {width:80px; height:30px;}
+.btn_pay {text-align: center}
+.btn_pay button {
+    padding: 15px 80px;
+    margin: 30px auto;
+    background:#2A4756;
+    color:white;
+    font-weight:500;
+    border-radius: 6px
+}
+
+.myOrder {width:100%; border-collapse: collapse; font-size:14px;background:rgb(255,255,255,.5)}
+.myOrder th, .myOrder td {border:1px solid #dadada;padding:10px;text-align: center}
+.myOrder th {background:#f9f9f9}
+.myOrder .shipment_dl {text-align:left; padding:0 30px; box-sizing: border-box}
+.shipment_dl dt, .shipment_dl dd {display:inline-block; line-height:21px;}
+.shipment_dl dt {width:15%; font-weight: 600;}
+.shipment_dl dd {width:84%}
+
+.orderer {padding:30px 150px}
+.orderer table {width:70%; border:1px solid #eee; margin: 0 auto; padding:20px;
+background-color:#ffffff85;
+}
+.orderer table th {height:40px}
+.orderer table td {}
+.orderer table td input {width:95%; height:30px; border:0px; border-bottom:1px solid #dadada}
+.orderer #btn_orderView {width:50%; height:40px;display:inline-block; margin:15px auto 0;
+    background-color:#2A4756;
+    color:white;
+    font-weight:500;
+    border-radius: 6px
+    }
+
+/* 완료 페이지 */
+.completeWrap { 
+    width:1200px;
+    height:800px;
+    margin:0 auto;
+    background-image:url("http://img.gmidas.com/spe_julgigo/2022chu_last.jpg");
+    background-size:contain;
+    background-repeat: no-repeat;
+    position:relative;
+}
+.completeWrap .comeplete_tit img {width:110px;display:block;margin:30px auto}
+.completeWrap .comeplete_tit span {font-size:23px; font-weight:bold;}
+.completeWrap .table_complete {
+    width: 550px;
+    margin: 20px auto;
+    position:absolute;
+    top:34%;
+    left:50%;
+    margin-left:-340px;
+
+}
+.comeplete_tit {
+    position:absolute;
+    top:48%;
+    width:90%;
+    text-align:center;
+    font-size:17px;
+    font-weight:500;
+}
+.comeplete_tit a {
+    font-weight:600;
+    color:#2A4756
+}
+.completeWrap .table_complete th,
+.completeWrap .table_complete td {
+    height:40px; line-height:40px; padding:0 15px ; font-size:;
+}
+.completeWrap .table_complete th {
+    width: 30%;
+}
+
+#footer {
+  background:#444; color:#eee; text-align:center; padding:30px;font-size:12px;
+  /*position:fixed;
+  bottom:0px;
+  width:100%;*/
+}
+.bulk_notice {
+    width:100%;
+    text-align: center;
+    margin:10px auto;
+    padding:10px;
+    border:1px solid #777;
+    box-sizing:border-box
+}
+.bulk_notice span {
+    font-weight:600;
+    color:#2A4756
+}
+
+
+
+@media all and (min-width:1024px)  and (max-width:1280px) {
+    #header h1 {padding:30px 30px 20px}
+    #category {padding:30px}
+    #lnb {right:30px}
+
+}
+@media only screen and (max-width:1023px) { 
+    #header h1 {padding:30px; margin-bottom:-15px}
+    #lnb {right:30px; top:30px;}
+#category {padding:15px}
+
+    #contents #itemList ul li {width:31%}
+    #contents #itemList ul li:nth-child(3n) {margin-right:0px;}
+    #contents #itemList ul li:nth-child(4n) {margin-right:2%}
+    #contents #itemList ul li .itemThumb {height:200px}
+    #contents #itemList ul li .itemThumb img {height:200px;}
+    
+    .payDetail {box-sizing: border-box; width:100%;}
+    .completeWrap .table_complete {width:90%;}
+    .completeWrap {width:100%;height:76.5vh; background-position-y: 30%;}
+    .comeplete_tit {width:100%;}
+    .speTitle img {width:100%;}
+}
+
+
+
+
+
+@media only screen and (max-width:479px) {
+    #header h1 {padding:25px 0; text-align:center;}
+    #lnb {position:unset; float:right; margin-right:5px;}
+    #lnb a:first-child::after {
+        height: 10px
+    }
+    #btn_mobMenu {
+        display: block;
+    }
+    /* 카테고리 옆메뉴로 
+    #category {padding:5px;position:Absolute; background:White;left:-120%}
+    #category .subCate li {width:24.5%}
+    
+    #category .subCate i {height:35%}
+    #category .subsubC li {width:32.8%;height:37px;}
+    
+    
+    #contents #itemList ul li:nth-child(2n) {margin-right:0px;}
+    #contents #itemList ul li .itemThumb {height:150px;}
+    #contents #itemList ul li .itemThumb img {height:150px;}
+    #contents #itemList ul li .itemName {font-size:1.23em;}
+    #contents img {
+        width: 100%
+    }
+*/
+    #category .subCate li {
+        width:49.5%;
+        border-top:0px
+    }
+    #category .subCate li:nth-child(1) {border-top:1px solid #dadada}
+    #category .subCate li:nth-child(2) {
+        border-top: 1px solid #dadada
+    }
+     #category .subCate li:nth-child(2n) {
+         border-right:1px solid #dadada;
+         
+    }
+    #contents #itemList ul {
+      display:flex;
+      flex-direction: row;
+      align-items: stretch;
+      flex-wrap: wrap;
+      align-content: stretch;
+      justify-content: space-evenly;
+    }
+      #contents #itemList ul li:nth-child(3n) {
+        margin-right:2%;
+      }
+    #category .subCate li a {
+        padding: 15px 0;
+        font-size: 14px;
+        display:block;
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis
+    }
+    #category .subsubC {
+        display:flex;
+        flex-direction: row;;
+        flex-wrap: wrap;
+        align-content: space-between;
+
+    }
+     #category .subsubC li {
+        width:33.3%;
+        box-sizing: border-box;
+     }
+    #category .subsubC li a {
+        font-size: 13px;
+        padding: 0 8px;
+        box-sizing: border-box;
+        display:block;
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis
+    }
+    #category .subsubC li:nth-child(5n+1) {
+        border-left: 0px
+    }
+
+    #category .subsubC li:nth-child(3n+1) {
+        border-left: 1px solid #dadada
+    }
+    
+    #contents #itemList {
+        padding: 30px 5px;
+    }
+    #contents #itemList ul li {width:47%}
+    #contents #itemList ul li:nth-child(2n) {
+        margin-right: 0px;
+    }
+    #contents .img_description {
+        width:100%;
+        padding:0
+
+    }
+    #contents .img_description img {
+        width: 100%;
+    }
+    
+    .payDetail {border:0px}
+    .payDetail .pay_thumb {border:1px solid #dadada; height:auto}
+    .payDetail .pay_thumb img {width:100%}
+   /* .deliver_dl, .price_dl {padding:10px 0}*/
+    .deliver_dl input {height:30px; width:94%}
+    #btn__postcard {
+        font-size:3vw;
+        height:30px;
+    }
+    .price_dl {font-size:15px}
+    .price_dl dd {width:63%}
+    .orderer {padding:15px 0px}
+    .orderer table {width:90%}
+    .myOrder th, .myOrder td {padding:9px 5px; font-size:12px;}
+    .shipment_dl dt {width:100%; margin-top:5px}
+    .shipment_dl dd {width:100%}
+
+    #contents .completeWrap .complete_check {
+        width: 30%;
+    }
+    .completeWrap {
+        background-image: url("http://img.gmidas.com/spe_julgigo/2021chu_complete_mob.jpg");
+        height:70vh;
+        background-size:cover
+    }
+    .completeWrap .comeplete_tit {width:50%;top:45%;left:25%;}
+    .completeWrap .table_complete {width:100%}
+    .completeWrap .table_complete th,
+    .completeWrap .table_complete td {padding:0 7px;}
+}

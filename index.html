@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>명절특판</title>
+    <meta name="viewport" content="initial-scale=1.0,user-scalable=no,maximum-scale=1,width=device-width" />
+    <!--<link rel="stylesheet" type="text/css" media="screen" href="main.css" />-->
+    <link rel="stylesheet" type="text/css" media="screen" href="common/basic.css" />
+    <link rel="stylesheet" type="text/css" media="screen" href="common/layout.css" />
+    <!--<script src="main.js"></script>-->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script>
+        $(document).ready(function() {
+            $('#btn_mobMenu').click(function(){
+                $('#category').toggleClass("mob_on");
+            });
+
+            $('#btn_webMenu').click(function(){
+                $('.subcateWrap').slideToggle();
+            });
+
+            $('.popup').click(function(){
+              $(this).hide();
+            });
+        });
+    </script>
+     <script>
+/* 	 $(document).ready(function(){
+'  	// 메인 탭메뉴
+' 	 	$(".subsubC > li").show();
+' 	 	$(".subCate li").click(function () {
+
+' 	 	$(".subCate li").removeClass("active").css("color", "#333").css("font-weight","400").css("background","#Fff");
+
+' 	 	$(this).addClass("active").css("background", "#dadada").css("font-weight","600");
+
+' 	 	$(".subsubC> li").hide()
+' 	 	var activeTab = $(this).attr("rel");
+' 	 	$("#" + activeTab).fadeIn()
+' 	 	});
+' 	  });  */
+ </script>
+</head>
+<body>
+<div id="speWrap" contextmenu="return false">
+    <div id="header">
+   <!-- <div class="popup">
+      <img src="http://img.gmidas.com/spe_julgigo/del_pop.png" alt="당사 추석선물세트 판매 및 배송은 2021년 9월 13일 오전 11시로 종료됩니다.많은 성원에 감사드립니다." />
+    </div>-->
+        <h1><a href="index.asp">2022 추석 선물세트</a></h1>
+
+        <div id="lnb">
+            <a href="/Order/myorder.asp">나의 구매내역</a>
+            <a href="/include/2022_gmidas_catalog_autumn.pdf">카탈로그 내려받기</a>
+        </div>
+
+       <!-- <div id="btn_mobMenu">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>-->
+        <div class="speTitle">
+            <img src="http://img.gmidas.com/spe_julgigo/2022chu_main.jpg" alt="2022 추석" />
+        </div>
+        <div id="category">
+            <div>
+                 <ul>
+            
+                <h2>상품명 ▼</h2>
+                
+            </div>
+            <!-- 중분류 -->
+            <div class="subcateWrap">
+                <div class="subCate">
+                    <ul>
+             
+                    <li class="sub_on">
+                    <a href="#">카테고리</a>
+                    </li>
+                
+                    </ul>
+                </div>
+                <!-- 소분류 -->
+                <ul class="subsubC">
+                
+                </ul>
+            </div>
+        </div>
+    </div>
+    <div id="contents">
+        <div id="itemList">
+            <ul>
+                <li>
+
+                        <div class="itemThumb">
+                            <img src="" alt="" />
+                        </div>
+                        <p class="itemName">상품명</p>
+                        <p class="itemInfo">50,000원</p>
+
+                      <a href="/Order/payment.html>" class="btnBuy btn">상품 구매하기</a>
+                </li>
+              
+            </ul>
+        </div>
+    </div>
+    <div id="footer">
+        © GMIDAS. All rights reserved.
+    </div>
+</div>
+
+</body>
+</html>
+
+ <script> 
+$(document).ready(function(){
+ $(document).bind("contextmenu", function(e) {
+  return false;
+ });
+});
+$(document).bind('selectstart',function() {return false;}); 
+$(document).bind('dragstart',function(){return false;}); 
+</script>

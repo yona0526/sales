@@ -1,0 +1,502 @@
+@import url('https://fonts.googleapis.com/css?family=Montserrat:200,300,400,500,600,700,800,900');
+@import url('https://fonts.googleapis.com/css?family=Montserrat:300,400,500,600,700,800,900&display=swap');
+
+html{overflow:auto;}
+body{background-color:#fff;height:100%}
+
+@font-face {
+  font-family: 'Nanum Gothic';
+  font-style: normal;
+  font-weight: 400;
+  src: url(//themes.googleusercontent.com/static/fonts/earlyaccess/nanumgothic/v4/NanumGothic-Regular.eot);
+  src: url(//themes.googleusercontent.com/static/fonts/earlyaccess/nanumgothic/v4/NanumGothic-Regular.eot?#iefix) format('embedded-opentype'),
+       url(//themes.googleusercontent.com/static/fonts/earlyaccess/nanumgothic/v4/NanumGothic-Regular.woff2) format('woff2'),
+       url(//themes.googleusercontent.com/static/fonts/earlyaccess/nanumgothic/v4/NanumGothic-Regular.woff) format('woff'),
+       url(//themes.googleusercontent.com/static/fonts/earlyaccess/nanumgothic/v4/NanumGothic-Regular.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'Nanum Gothic';
+  font-style: normal;
+  font-weight: 600;
+  src: url(//themes.googleusercontent.com/static/fonts/earlyaccess/nanumgothic/v4/NanumGothic-Bold.eot);
+  src: url(//themes.googleusercontent.com/static/fonts/earlyaccess/nanumgothic/v4/NanumGothic-Bold.eot?#iefix) format('embedded-opentype'),
+       url(//themes.googleusercontent.com/static/fonts/earlyaccess/nanumgothic/v4/NanumGothic-Bold.woff2) format('woff2'),
+       url(//themes.googleusercontent.com/static/fonts/earlyaccess/nanumgothic/v4/NanumGothic-Bold.woff) format('woff'),
+       url(//themes.googleusercontent.com/static/fonts/earlyaccess/nanumgothic/v4/NanumGothic-Bold.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'Nanum Gothic';
+  font-style: normal;
+  font-weight: 800;
+  src: url(//themes.googleusercontent.com/static/fonts/earlyaccess/nanumgothic/v4/NanumGothic-ExtraBold.eot);
+  src: url(//themes.googleusercontent.com/static/fonts/earlyaccess/nanumgothic/v4/NanumGothic-ExtraBold.eot?#iefix) format('embedded-opentype'),
+       url(//themes.googleusercontent.com/static/fonts/earlyaccess/nanumgothic/v4/NanumGothic-ExtraBold.woff2) format('woff2'),
+       url(//themes.googleusercontent.com/static/fonts/earlyaccess/nanumgothic/v4/NanumGothic-ExtraBold.woff) format('woff'),
+       url(//themes.googleusercontent.com/static/fonts/earlyaccess/nanumgothic/v4/NanumGothic-ExtraBold.ttf) format('truetype');
+}
+
+
+body, input, textarea, select, button, table{margin:0; font-size:16px; font-family: 'Nanum Gothic', Nanum Gothic, '돋움', Dotum, Helvetica, AppleGothic, Sans-serif; color:#333}
+body, h1, h2, h3, h4, h5, dl, dt, dd, ul, li, ol, th, td, p, /*blockquote,*/ form, fieldset, legend, button { margin: 0; padding: 0; }
+
+img, fieldset{border:0 none}
+dl, ul, ol, li {list-style: none outside none;}
+button{border:0 none; cursor:pointer; display: block;}
+table, th, td, div{border-collapse:separate}
+
+a,img,input {outline:none; selector-dummy:expression(this.hideFocus=true);}
+.png24 { tmp:expression(setPng24(this));} 
+area {outline:0;}
+
+li img { vertical-align:top;}
+td img { vertical-align:middle}
+.cursor { cursor: pointer;}
+
+strong, .strong , b { font-weight: 600; }
+address, caption, cite, code, dfn, em, var {font-style:normal;}
+
+hr { clear: both; display: none; }
+.blind, legend, caption {display:none !important}
+
+a {text-decoration:none; color:#333;}
+a:hover, a:active, a:focus {text-decoration:none; /* background-color:transparent */}
+#Board table a:link, #Board table a:visited {color:#555;}
+#Board table a:hover, #Board table a:active {text-decoration:underline;}
+
+input, select, textarea {vertical-align:middle; line-height:130%}
+input, textarea, select { border-width:1px; border-style: solid; border-color:#ccc; background:#fff; outline:0;}
+input[type=button] {border-radius:0; -webkit-border-radius:0; appearance:none; -webkit-appearance:none;}
+input[type=submit] {border-radius:0; -webkit-border-radius:0; appearance:none; -webkit-appearance:none;}
+select {height:40px; padding-left:7px; font-size:14px; font-weight:300; color:#222; box-sizing:border-box; border-radius:0; -webkit-border-radius:0;}
+input.text {height:40px; padding:0px 10px; font-size:14px; color:#222; font-weight:300; box-sizing:border-box; border-radius:0; -webkit-border-radius:0; appearance:none; -webkit-appearance:none;}
+input.file {border:1px solid #c1c1c1; padding:2px 6px;}
+input.check	{border:none; background:none;}
+input.radio	{border:0 none; background:none;}
+textarea.textarea {width:100%; height:140px; padding:10px; font-size:14px; font-weight:300; color:#222; box-sizing:border-box; border-radius:0; -webkit-border-radius:0; appearance:none; -webkit-appearance:none; resize:none;}
+label {cursor:pointer;}
+
+input::placeholder {color:#555; opacity:1;}
+input::-moz-placeholder { /* Firefox 19+ */ color:#555; opacity:1;}
+input:-moz-placeholder { /* Firefox 4 - 18 */ color:#555; opacity:1;}
+input::-webkit-input-placeholder { /* Chrome, Safari, Opera */ color:#555; opacity:1;}
+input::-ms-input-placeholder { /* Edge */ color:#555; opacity:1;}
+input:-ms-input-placeholder { /* Edge */ color:#555; opacity:1;}
+
+textarea::placeholder {opacity:1;}
+textarea::-moz-placeholder { /* Firefox 19+ */ opacity:1;}
+textarea:-moz-placeholder { /* Firefox 4 - 18 */ opacity:1;}
+textarea::-webkit-input-placeholder { /* Chrome, Safari, Opera */ opacity:1;}
+textarea::-ms-input-placeholder { /* Edge */ opacity:1;}
+textarea:-ms-input-placeholder { /* Edge */ opacity:1;}
+
+.button {border:0 none; cursor:pointer}
+.txtML {text-decoration:line-through !important;}
+
+
+/* IE 10+ */
+@media all and (-ms-high-contrast: none), (-ms-high-contrast: active) {
+	
+}
+
+/* IE9, IE10 */
+@media screen and (min-width:0\0) {
+	
+}
+
+/* margin */
+.mgT0 {margin-top:0px !important}
+.mgT3 {margin-top:3px !important}
+.mgT5 {margin-top:5px !important}
+.mgT6 {margin-top:6px !important}
+.mgT8 {margin-top:8px !important}
+.mgT10 {margin-top:10px !important}
+.mgT13 {margin-top:13px !important}
+.mgT15 {margin-top:15px !important}
+.mgT20 {margin-top:20px !important}
+.mgT25 {margin-top:25px !important}
+.mgT30 {margin-top:30px !important}
+.mgT35 {margin-top:35px !important}
+.mgT40 {margin-top:40px !important}
+.mgT50 {margin-top:50px !important}
+.mgT60 {margin-top:60px !important}
+.mgT60 {margin-top:60px !important}
+.mgT75 {margin-top:75px !important}
+
+
+.mgB0 {margin-bottom:0px !important}
+.mgB5 {margin-bottom:5px !important}
+.mgB10 {margin-bottom:10px !important}
+.mgB20 {margin-bottom:20px !important}
+.mgB30 {margin-bottom:30px !important}
+.mgB35 {margin-bottom:35px !important}
+.mgB40 {margin-bottom:40px !important}
+.mgB50 {margin-bottom:50px !important}
+
+.mgR10 {margin-right:10px !important}
+.mgR12 {margin-right:12px !important}
+.mgR14 {margin-right:14px !important}
+.mgR20 {margin-right:20px !important}
+.mgR23 {margin-right:23px !important}
+.mgR28 {margin-right:28px !important}
+.mgR30 {margin-right:30px !important}
+.mgR70 {margin-right:70px !important}
+
+.mgL0 {margin-left:0px !important}
+.mgL5 {margin-left:5px !important}
+.mgL10 {margin-left:10px !important}
+.mgL12 {margin-left:12px !important}
+.mgL15 {margin-left:15px !important}
+.mgL17 {margin-left:17px !important}
+.mgL20 {margin-left:20px !important}
+.mgL25 {margin-left:25px !important}
+.mgL30 {margin-left:30px !important}
+.mgL40 {margin-left:40px !important}
+
+/* padding */
+.pd3 {padding:3px !important}
+.pd10 {padding:10px !important}
+.pd17 {padding:17px !important}
+
+.pdT0 {padding-top:0px !important}
+.pdT4 {padding-top:4px !important}
+.pdT5 {padding-top:5px !important}
+.pdT7 {padding-top:7px !important}
+.pdT10 {padding-top:10px !important}
+.pdT15 {padding-top:15px !important}
+.pdT20 {padding-top:20px !important}
+.pdT30 {padding-top:30px !important}
+.pdT50 {padding-top:50px !important}
+
+.pdB0 {padding-bottom:0px !important}
+.pdB5 {padding-bottom:5px !important}
+.pdB10 {padding-bottom:10px !important}
+.pdB20 {padding-bottom:20px !important}
+.pdB30 {padding-bottom:30px !important}
+.pdB40 {padding-bottom:40px !important}
+.pdB50 {padding-bottom:50px !important}
+
+.pdL0 {padding-left:0px !important}
+.pdL8 {padding-left:8px !important}
+.pdL12 {padding-left:12px !important}
+.pdL20 {padding-left:20px !important}
+.pdL50 {padding-left:50px !important}
+
+.pdR0 {padding-right:0px !important}
+.pdR5 {padding-right:5px !important}
+.pdR10 {padding-right:10px !important}
+.pdR20 {padding-right:20px !important}
+
+/* width */
+.w100 {width:100% !important;}
+
+/* align */
+.alignL {text-align:left !important}
+.alignR {text-align:right !important}
+.alignC {text-align:center !important}
+.alignJ{text-align:justify !important;}
+.clear {clear:both !important}
+.floatL {float:left !important}
+.floatR {float:right !important}
+img.imgT {vertical-align:top !important}
+img.imgB {vertical-align:bottom !important}
+img.imgC {vertical-align:middle !important}
+.vaT {vertical-align:top !important;}
+.vaB {vertical-align:bottom !important;}
+
+/*color*/
+.blue {color:#1b67a6 !important;}
+.red {color:#ff2a2a !important;}
+
+/* border */
+.bdTn {border-top:none !important;}
+.bdBn {border-bottom:none !important;}
+.bdLn {border-left:none !important;}
+.bdRn {border-right:none !important;}
+
+/* IconType */
+.FacilityIconArea {font-size:0;}
+.FacilityIconArea span {display:inline-block; height:28px; padding:0 8px; margin-right:4px; margin-top:4px; border:1px solid #999; font-size:13px; color:#222; border-radius:3px; vertical-align:top; line-height:28px;}
+.FacilityIconArea.white span {border-color:#555; background:#555; color:#fff;}
+.FacilityIconArea span img {height:16px; padding-right:5px; vertical-align:middle;}
+.FacilityIconArea.white span img {height:18px;}
+
+/* BtnType */
+.BtnArea {margin-top:50px; font-size:0; text-align:center;}
+.BtnArea a,
+.BtnArea input {width:202px; margin-left:10px;}
+.BtnArea a:first-child,
+.BtnArea input:first-child {margin-left:0;}
+
+.btn_search {display:inline-block; width:10.5%; height:55px; border:none; background:#0069aa; font-size:18px; font-weight:600; color:#fff; text-align:center; vertical-align:middle; line-height:55px; border-radius:4px !important;}
+.btn_map {display:inline-block; width:10.5%; height:55px; border:none; background:#8cc63f; font-size:18px; font-weight:600; color:#fff; text-align:center; vertical-align:middle; line-height:55px; border-radius:4px !important;}
+.btn_booking,
+.btn_refresh {display:inline-block; height:26px; padding:0 10px; background:#fff; border:1px solid #555; border-radius:3px; font-size:13px; box-sizing:border-box; line-height:24px; transition:background 0.5s; -webkit-transition:background 0.5s;}
+.btn_booking span {padding-left:18px; background:url('/images/common/icon/icon_booking.png') no-repeat 0 center;}
+.btn_booking:hover,
+.btn_booking.on,
+.btn_refresh:hover {background:#555; color:#fff;}
+.btn_booking:hover span,
+.btn_booking.on span {background-image:url('/images/common/icon/icon_booking_ov.png');}
+.btn_refresh span {padding-left:22px; background:url('/images/common/icon/icon_refresh.png') no-repeat 0 center;}
+.btn_refresh:hover span {background-image:url('/images/common/icon/icon_refresh_ov.png');}
+
+.btn_blue {display:block; width:100%; height:70px; padding:0; border:none; background:#1b67a6; font-size:22px; font-weight:600; text-align:center; color:#fff; line-height:70px;}
+.btn_blue02 {display:inline-block; height:50px; padding:0; border:none; background:#1b67a6; font-size:18px; font-weight:600; text-align:center; color:#fff; line-height:50px; box-sizing:border-box; vertical-align:top;}
+.btn_blackLine02 {display:inline-block; height:50px; background:#fff; border:1px solid #222; font-size:18px; font-weight:600; text-align:center; color:#555; line-height:50px; box-sizing:border-box; vertical-align:top;}
+.btn_s_blackLine {display:inline-block; width:80px; height:18px; border:1px solid #222; background:#fff; font-size:12px; font-weight:600; color:#222; text-align:center; border-radius:2px; line-height:18px; vertical-align:top;}
+
+/* BtnMoreType */
+
+
+
+
+
+
+
+/*============================================================*/
+/*======================= PC 1600 px ~ =======================*/
+/*============================================================*/
+@media only screen and (max-width:1600px){
+
+/* BtnType */
+.btn_search,
+.btn_map {width:18%;}
+
+}
+
+/*============================================================*/
+/*======================= PC 1400 px ~ =======================*/
+/*============================================================*/
+@media only screen and (max-width:1400px){
+
+
+}
+
+/*============================================================*/
+/*======================= PC 1280 px ~ =======================*/
+/*============================================================*/
+@media only screen and (max-width:1280px){
+
+/* BtnType */
+.BtnArea {margin-top:40px;}
+.btn_black,
+.btn_red {height:55px; font-size:17px; line-height:55px;}
+
+}
+
+/*============================================================*/
+/*======================= PC 1024 px ~ =======================*/
+/*============================================================*/
+@media only screen and (max-width:1024px){
+body, input, textarea, select, button, table {font-size:15px; letter-spacing:-0.5px;}
+select {font-size:13px;}
+input.text {font-size:13px; padding:0 8px;}
+textarea.textarea {padding:15px;}
+textarea.textarea2 {padding:15px; font-size:14px;}
+
+
+
+
+
+}
+
+/*===============================================================*/
+/*======================= Tablet 850 px ~ =======================*/
+/*===============================================================*/
+@media only screen and (max-width:850px){
+
+
+}
+
+/*===============================================================*/
+/*======================= Tablet 768 px ~ =======================*/
+/*===============================================================*/
+@media only screen and (max-width:768px){
+body, input, textarea, select, button, table {font-size:14px;}
+select {font-size:13px;}
+input.text {font-size:13px;}
+
+/* IconType */
+.FacilityIconArea span {height:26px; padding:0 6px; font-size:12px; line-height:26px;}
+.FacilityIconArea span img {height:14px;}
+
+/* btn */
+.btn_search,
+.btn_map {font-size:17px;}
+.btn_booking,
+.btn_refresh {height:24px; padding:0 8px; font-size:12px; line-height:24px;}
+.btn_booking span {padding-left:18px; background-size:13px;}
+.btn_refresh span {padding-left:22px; background-size:13px;}
+
+.btn_s_blackLine {width:162px; height:32px; font-size:13px; font-weight:400; line-height:30px; box-sizing:border-box;}
+
+}
+
+/*===============================================================*/
+/*======================= Mobile 640 px ~ =======================*/
+/*===============================================================*/
+@media only screen and (max-width:640px){
+
+
+
+}
+
+/*===============================================================*/
+/*======================= Mobile 520 px ~ =======================*/
+/*===============================================================*/
+@media only screen and (max-width:520px){
+body, input, textarea, select, button, table {font-size:3vw;}
+select {height:8vw; padding:0 0 0 0; font-size:3.4vw;}
+input.text {height:8vw; padding:0 3vw; font-size:3.4vw;}
+input.text2 {width:60%; font-size:3.4vw;}
+textarea.textarea {height:30vw; padding:3% 2%; font-size:3.2vw;}
+
+/* IconType */
+.FacilityIconArea span {height:5vw; padding:0 1.5vw; border-color:#ccc; margin-right:1vw; margin-top:1vw; font-size:2.6vw; border-radius:2px; line-height:5vw;}
+.FacilityIconArea span img {height:2.8vw; padding-right:0.8vw;}
+.FacilityIconArea.white span img {height:3vw;}
+
+/* btn */
+.BtnArea {margin:2% 2% 0 2%;}
+.BtnArea a,
+.BtnArea input {width:49%; margin-left:2%;}
+.BtnArea.list1 a,
+.BtnArea.list1 input {width:100%;}
+
+.btn_search,
+.btn_map {height:10vw; font-size:3.6vw; border-radius:2px !important; line-height:10vw;}
+.btn_booking,
+.btn_refresh {height:5vw; padding:0 2vw; border-radius:2px; font-size:2.6vw; line-height:4.5vw;}
+.btn_booking span {padding-left:4vw; background-image:url('/images/common/icon/icon_booking_m.png'); background-size:2.2vw;}
+.btn_booking:hover span {background-image:url('/images/common/icon/icon_booking_m_ov.png'); background-size:2.2vw;}
+.btn_refresh span {padding-left:4vw; background-image:url('/images/common/icon/icon_refresh_m.png'); background-size:2.5vw;}
+.btn_refresh:hover span {background-image:url('/images/common/icon/icon_refresh_m_ov.png'); background-size:2.5vw;}
+
+.btn_blue02,
+.btn_blackLine02 {height:11vw; font-size:3.8vw; font-weight:600; line-height:10vw;}
+.btn_s_blackLine {width:22vw; height:7.5vw; font-size:3.2vw; line-height:7vw;}
+}
+.btn-home {
+    display:block;
+    margin:30px auto 10px;
+    width:200px; 
+    height:40px; 
+    line-height:40px;
+    border-radius: 6px;
+    font-size:16px;
+    font-weight:500;
+    background:#eee;
+}
+
+/*===============================================================*/
+/*======================= Mobile 480 px ~ =======================*/
+/*===============================================================*/
+@media only screen and (max-width:480px){
+
+
+}
+
+
+/*===============================================================*/
+/*======================= Mobile 360 px ~ =======================*/
+/*===============================================================*/
+@media only screen and (max-width:360px){
+
+
+
+}
+
+
+.calendar .ui-datepicker {
+    margin: 0 auto;
+    width: 80%;
+    height: 100%;
+}
+.calendar .ui-widget-content{
+    border: none;
+}
+.calendar .ui-datepicker-title {
+    background-color: transparent;
+}
+.calendar .ui-datepicker-header {
+    background: #FFF;
+    border: none;
+}
+.calendar .ui-datepicker-prev {
+    background-color: transparent;
+}
+.calendar .ui-datepicker-next {
+    background-color: transparent;
+}
+.calendar .ui-datepicker table {
+    background-color: #FFF;
+}
+.calendar .ui-datepicker table a.ui-state-default {
+    background: #FFF;
+    border: none;
+}
+.calendar .ui-datepicker table .ui-datepicker-week-end:first-child,
+.calendar .ui-datepicker table tr .ui-datepicker-week-end:first-child a {
+    color: crimson;
+}
+.calendar .ui-datepicker table .ui-datepicker-week-end:last-child,
+.calendar .ui-datepicker table tr .ui-datepicker-week-end:last-child a {
+    color: dodgerblue;
+}
+.calendar .ui-datepicker table a.ui-state-default.ui-state-hover {
+    background-color: #F0F0F0;
+}
+.calendar .ui-datepicker table a.ui-state-default.ui-state-active {
+    background-color: #EEE;
+}
+.calendar .ui-datepicker table a.ui-state-default.ui-state-highlight {
+    background-color: gold;
+}
+.calendar .ui-datepicker-prev span {
+    background-position: -96px -16px;
+}
+.calendar .ui-datepicker-prev {
+    border: 1px solid #EEE;
+}
+.calendar .ui-datepicker-next span {
+    background-position: -32px -16px;
+}
+.calendar .ui-datepicker-next {
+    border: 1px solid #EEE;
+}
+
+#shop.product > ul > li {
+    transition: .3s ease;
+}
+
+#shop.product > ul > li:hover {
+    transform: scale(1.03);
+}
+
+#shop.product > ul > li .prd_info {
+    padding-top: 10px;
+}
+
+#shop.product > ul > li .prd_info .price {
+    padding-top: 5px;
+}
+
+.TitleArea > h3 > small {
+    font-size: 13px;
+    font-weight: normal;
+}
+
+#shop.view .ReservationTable .res_detail .product table {width:100%;}
+#shop.view .ReservationTable .res_detail .product table th {width:104px; padding-top:10px; font-weight:400; text-align:left; vertical-align:middle;}
+#shop.view .ReservationTable .res_detail .product table td {padding-top:10px; vertical-align:middle;}
+#shop.view .ReservationTable .res_detail .product table tr:first-child th,
+#shop.view .ReservationTable .res_detail .product table tr:first-child td {padding-top:0;}
+#shop.view .ReservationTable .res_detail .product table td input.text,
+#shop.view .ReservationTable .res_detail .product table td select {width:100%;}
+#shop.view .ReservationTable .res_detail .product table td input::placeholder {color:#999;}
+#shop.view .ReservationTable .res_detail .product table td input::-moz-placeholder { color:#999;}
+#shop.view .ReservationTable .res_detail .product table td input:-moz-placeholder {color:#999;}
+#shop.view .ReservationTable .res_detail .product table td input::-webkit-input-placeholder {color:#999;}
+#shop.view .ReservationTable .res_detail .product table td input::-ms-input-placeholder {color:#999;}
+#shop.view .ReservationTable .res_detail .product table td input:-ms-input-placeholder {color:#999;}
+#shop.view .ReservationTable .res_detail .product table td select {padding-right:40px; white-space:nowrap; text-overflow:ellipsis; overflow:hidden;}
